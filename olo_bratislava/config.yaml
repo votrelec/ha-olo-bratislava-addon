@@ -1,0 +1,51 @@
+name: "OLO Bratislava"
+version: "0.1.4"
+slug: "olo_bratislava_hybrid"
+description: "Unofficial OLO Bratislava add-on for Home Assistant with pickup dates and notifications."
+url: "https://github.com/votrelec/ha-olo-bratislava-addon"
+startup: "application"
+boot: "auto"
+init: false
+ingress: true
+ingress_port: 8099
+panel_icon: "mdi:trash-can-outline"
+panel_title: "OLO Bratislava"
+panel_admin: true
+arch:
+  - amd64
+  - aarch64
+  - armv7
+homeassistant_api: true
+hassio_api: true
+watchdog: "http://[HOST]:[PORT:8099]/api/health"
+options:
+  source_url: "https://www.olo.sk/odpad/zistite-si-svoj-odvozovy-den"
+  registration_number: ""
+  show_mixed: true
+  show_kitchen_bio: true
+  show_garden_bio: true
+  show_plastic: true
+  show_paper: true
+  show_glass: true
+  refresh_interval_hours: 12
+  notify_persistent: true
+  notify_mobile: false
+  mobile_notify_services: []
+  notification_time: "18:00"
+  locale: "sk"
+schema:
+  source_url: url
+  registration_number: str
+  show_mixed: bool
+  show_kitchen_bio: bool
+  show_garden_bio: bool
+  show_plastic: bool
+  show_paper: bool
+  show_glass: bool
+  refresh_interval_hours: "int(1,168)"
+  notify_persistent: bool
+  notify_mobile: bool
+  mobile_notify_services:
+    - str
+  notification_time: "match(^([01][0-9]|2[0-3]):[0-5][0-9]$)"
+  locale: "list(sk|en)"

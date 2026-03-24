@@ -1,0 +1,8 @@
+{
+  "name": "ha-olo-bratislava-addon",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-strip-types olo_bratislava/src/schedule.test.ts"
+  }
+}

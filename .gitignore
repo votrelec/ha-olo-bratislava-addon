@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+output/
+.tmp_testdata/
+.tmp_ha_config/
+*.tgz

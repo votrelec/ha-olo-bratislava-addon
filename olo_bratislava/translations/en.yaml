@@ -1,0 +1,43 @@
+configuration:
+  source_url:
+    name: Source URL
+    description: OLO page URL used as the source reference
+  registration_number:
+    name: Registration number
+    description: OLO registration number for the pickup calendar
+  show_mixed:
+    name: Show mixed waste
+    description: Include mixed municipal waste in entities and notifications
+  show_kitchen_bio:
+    name: Show kitchen bio
+    description: Include kitchen bio waste in entities and notifications
+  show_garden_bio:
+    name: Show garden bio
+    description: Include garden bio waste in entities and notifications
+  show_plastic:
+    name: Show plastic
+    description: Include plastic, metals and beverage cartons in entities and notifications
+  show_paper:
+    name: Show paper
+    description: Include paper in entities and notifications
+  show_glass:
+    name: Show glass
+    description: Include glass in entities and notifications
+  refresh_interval_hours:
+    name: Refresh interval
+    description: Number of hours between automatic refreshes
+  notify_persistent:
+    name: Persistent notifications
+    description: Send a Home Assistant persistent notification one day before pickup
+  notify_mobile:
+    name: Mobile notifications
+    description: Send Home Assistant mobile_app notifications one day before pickup
+  mobile_notify_services:
+    name: Mobile notify services
+    description: Manually enter notify.mobile_app service IDs here; use the ingress UI for a live picker
+  notification_time:
+    name: Notification time
+    description: Local time for one day before pickup notifications
+  locale:
+    name: Locale
+    description: UI locale

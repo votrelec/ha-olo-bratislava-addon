@@ -1,0 +1,43 @@
+configuration:
+  source_url:
+    name: Zdrojova URL
+    description: OLO URL stranky pre odvozovy kalendar
+  registration_number:
+    name: Evidencne cislo
+    description: Evidencne cislo OLO pre harmonogram odvozu
+  show_mixed:
+    name: Zmesovy odpad
+    description: Zahrnut zmesovy komunlany odpad do entit a notifikacii
+  show_kitchen_bio:
+    name: Kuchynsky bioodpad
+    description: Zahrnut kuchynsky bioodpad do entit a notifikacii
+  show_garden_bio:
+    name: Zahradny bioodpad
+    description: Zahrnut zahradny bioodpad do entit a notifikacii
+  show_plastic:
+    name: Plast
+    description: Zahrnut plast, kovy a napojove kartony do entit a notifikacii
+  show_paper:
+    name: Papier
+    description: Zahrnut papier do entit a notifikacii
+  show_glass:
+    name: Sklo
+    description: Zahrnut sklo do entit a notifikacii
+  refresh_interval_hours:
+    name: Interval obnovy
+    description: Pocet hodin medzi automatickym refreshom
+  notify_persistent:
+    name: Persistentne notifikacie
+    description: Poslat persistentne upozornenie den pred odvozom
+  notify_mobile:
+    name: Mobilne notifikacie
+    description: Poslat mobile_app notifikacie den pred odvozom
+  mobile_notify_services:
+    name: Mobile notify sluzby
+    description: Rucne zadaj notify.mobile_app service ID; pre pohodlny vyber pouzi ingress UI
+  notification_time:
+    name: Cas notifikacie
+    description: Lokalny cas upozornenia den pred odvozom
+  locale:
+    name: Jazyk
+    description: Jazyk UI
